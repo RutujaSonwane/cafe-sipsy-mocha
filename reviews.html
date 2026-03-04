@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews | Cafe Sipsy Mocha</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="antialiased bg-offwhite">
+    
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-offwhite/90 backdrop-blur-md border-b border-espresso/5 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="/" class="flex items-center gap-2 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-espresso group-hover:text-terracotta transition-colors"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+            <span class="font-display font-bold text-xl tracking-tight text-espresso">Cafe Sipsy Mocha</span>
+          </a>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="/" class="nav-link text-espresso hover:text-terracotta font-medium transition-colors">Home</a>
+            <a href="/menu.html" class="nav-link text-espresso hover:text-terracotta font-medium transition-colors">Menu</a>
+            <a href="/about.html" class="nav-link text-espresso hover:text-terracotta font-medium transition-colors">About</a>
+            <a href="/reviews.html" class="nav-link text-espresso hover:text-terracotta font-medium transition-colors">Reviews</a>
+            <a href="/contact.html" class="nav-link text-espresso hover:text-terracotta font-medium transition-colors">Contact</a>
+            <a href="/reservation.html" class="bg-espresso text-cream px-6 py-2.5 rounded-full font-medium hover:bg-terracotta transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200">Book a Table</a>
+          </div>
+          <button id="menu-btn" class="md:hidden text-espresso hover:text-terracotta focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-50 bg-offwhite transform translate-x-full transition-transform duration-300 md:hidden closed">
+      <div class="flex flex-col h-full p-8">
+        <div class="flex justify-end mb-8">
+          <button id="close-menu-btn" class="text-espresso hover:text-terracotta">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 18 18"/></svg>
+          </button>
+        </div>
+        <div class="flex flex-col space-y-6 text-center">
+          <a href="/" class="mobile-link text-2xl font-display font-medium text-espresso hover:text-terracotta">Home</a>
+          <a href="/menu.html" class="mobile-link text-2xl font-display font-medium text-espresso hover:text-terracotta">Menu</a>
+          <a href="/about.html" class="mobile-link text-2xl font-display font-medium text-espresso hover:text-terracotta">About</a>
+          <a href="/reviews.html" class="mobile-link text-2xl font-display font-medium text-espresso hover:text-terracotta">Reviews</a>
+          <a href="/contact.html" class="mobile-link text-2xl font-display font-medium text-espresso hover:text-terracotta">Contact</a>
+          <a href="/reservation.html" class="mobile-link text-2xl font-display font-medium text-terracotta font-bold">Book a Table</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="pt-32 pb-12 bg-cream/20 text-center px-4">
+      <div class="flex justify-center items-center gap-2 text-terracotta mb-4 fade-in-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span class="text-3xl font-bold font-display">4.9</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-display font-bold text-espresso mb-4 fade-in-up delay-100">Customer Love</h1>
+      <p class="text-lg text-espresso/70 max-w-2xl mx-auto fade-in-up delay-200">Based on 934+ Google Reviews</p>
+    </header>
+
+    <!-- Reviews Grid -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-espresso/5 hover:shadow-md transition-shadow" data-aos="fade-up">
+          <div class="flex items-center gap-1 text-terracotta mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="text-espresso/80 mb-6 italic">"The best place for late night cravings! Their Hazelnut Frappé is to die for. The ambiance is so cozy and the staff is super friendly."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-espresso/10 flex items-center justify-center font-bold text-espresso">AS</div>
+            <div>
+              <h4 class="font-bold text-espresso text-sm">Anjali Sharma</h4>
+              <span class="text-xs text-espresso/50">2 weeks ago</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-espresso/5 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center gap-1 text-terracotta mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="text-espresso/80 mb-6 italic">"Finally a place in Kharadi that stays open till 3 AM! The Cheese Corn Sandwich is my absolute favorite. Highly recommended."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-espresso/10 flex items-center justify-center font-bold text-espresso">RK</div>
+            <div>
+              <h4 class="font-bold text-espresso text-sm">Rahul Kulkarni</h4>
+              <span class="text-xs text-espresso/50">1 month ago</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-espresso/5 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center gap-1 text-terracotta mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="text-espresso/80 mb-6 italic">"Great vibes, affordable prices, and amazing food. Perfect for students. The Peri-Peri Fries are spicy and crispy!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-espresso/10 flex items-center justify-center font-bold text-espresso">NP</div>
+            <div>
+              <h4 class="font-bold text-espresso text-sm">Neha Patel</h4>
+              <span class="text-xs text-espresso/50">2 months ago</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-espresso/5 hover:shadow-md transition-shadow" data-aos="fade-up">
+          <div class="flex items-center gap-1 text-terracotta mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="text-espresso/80 mb-6 italic">"A hidden gem in Pune. The decor is minimal and beautiful. Love coming here to work or read."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-espresso/10 flex items-center justify-center font-bold text-espresso">VJ</div>
+            <div>
+              <h4 class="font-bold text-espresso text-sm">Vikram Joshi</h4>
+              <span class="text-xs text-espresso/50">3 months ago</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-espresso/5 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center gap-1 text-terracotta mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="text-espresso/80 mb-6 italic">"Superb service! We celebrated a birthday here and they made it so special. Thank you Cafe Sipsy Mocha!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-espresso/10 flex items-center justify-center font-bold text-espresso">SM</div>
+            <div>
+              <h4 class="font-bold text-espresso text-sm">Sonia Mehta</h4>
+              <span class="text-xs text-espresso/50">4 months ago</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-espresso/5 hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center gap-1 text-terracotta mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="text-espresso/80 mb-6 italic">"Ordered via Swiggy and the packaging was great. Food arrived hot and fresh. Will definitely visit in person soon."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-espresso/10 flex items-center justify-center font-bold text-espresso">AD</div>
+            <div>
+              <h4 class="font-bold text-espresso text-sm">Amit Deshmukh</h4>
+              <span class="text-xs text-espresso/50">5 months ago</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-16 text-center" data-aos="fade-up">
+        <a href="https://www.google.com/maps/place/Cafe+Sipsy+Mocha" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 bg-espresso text-cream rounded-full font-bold hover:bg-terracotta transition-colors shadow-lg">
+          Leave a Review on Google
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+        </a>
+        <p class="text-sm text-espresso/60 mt-4">Your review will be posted directly to our Google listing.</p>
+      </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-espresso/95 text-cream/80 pt-16 pb-8 border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          <div>
+            <a href="/" class="flex items-center gap-2 mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-terracotta"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+              <span class="font-display font-bold text-xl tracking-tight text-cream">Cafe Sipsy Mocha</span>
+            </a>
+            <p class="text-sm leading-relaxed mb-6">Your go-to spot for late-night vibes, great coffee, and delicious bites in Kharadi.</p>
+          </div>
+          <div>
+            <h4 class="font-display font-bold text-cream text-lg mb-6">Quick Links</h4>
+            <ul class="space-y-3">
+              <li><a href="/" class="hover:text-terracotta transition-colors">Home</a></li>
+              <li><a href="/menu.html" class="hover:text-terracotta transition-colors">Menu</a></li>
+              <li><a href="/about.html" class="hover:text-terracotta transition-colors">About Us</a></li>
+              <li><a href="/reservation.html" class="hover:text-terracotta transition-colors">Book a Table</a></li>
+              <li><a href="/contact.html" class="hover:text-terracotta transition-colors">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-display font-bold text-cream text-lg mb-6">Contact Us</h4>
+            <ul class="space-y-4 text-sm">
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-terracotta mt-1 shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Rakshak Nagar, Kharadi, Pune, Maharashtra 411014</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-terracotta shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+918390083077" class="hover:text-terracotta transition-colors">083900 83077</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-display font-bold text-cream text-lg mb-6">Opening Hours</h4>
+            <ul class="space-y-2 text-sm">
+              <li class="flex justify-between">
+                <span>Monday - Sunday</span>
+                <span class="text-cream font-medium">12:00 PM - 3:00 AM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-cream/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-cream/50">
+          <p>&copy; 2024 Cafe Sipsy Mocha. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="/src/script.ts"></script>
+  </body>
+</html>

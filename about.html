@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Cafe Sipsy Mocha</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="antialiased bg-offwhite">
+    
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-offwhite/90 backdrop-blur-md border-b border-espresso/5 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="/" class="flex items-center gap-2 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-espresso group-hover:text-terracotta transition-colors"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+            <span class="font-display font-bold text-xl tracking-tight text-espresso">Cafe Sipsy Mocha</span>
+          </a>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="/" class="nav-link text-espresso hover:text-terracotta font-medium transition-colors">Home</a>
+            <a href="/menu.html" class="nav-link text-espresso hover:text-terracotta font-medium transition-colors">Menu</a>
+            <a href="/about.html" class="nav-link text-espresso hover:text-terracotta font-medium transition-colors">About</a>
+            <a href="/reviews.html" class="nav-link text-espresso hover:text-terracotta font-medium transition-colors">Reviews</a>
+            <a href="/contact.html" class="nav-link text-espresso hover:text-terracotta font-medium transition-colors">Contact</a>
+            <a href="/reservation.html" class="bg-espresso text-cream px-6 py-2.5 rounded-full font-medium hover:bg-terracotta transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200">Book a Table</a>
+          </div>
+          <button id="menu-btn" class="md:hidden text-espresso hover:text-terracotta focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-50 bg-offwhite transform translate-x-full transition-transform duration-300 md:hidden closed">
+      <div class="flex flex-col h-full p-8">
+        <div class="flex justify-end mb-8">
+          <button id="close-menu-btn" class="text-espresso hover:text-terracotta">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 18 18"/></svg>
+          </button>
+        </div>
+        <div class="flex flex-col space-y-6 text-center">
+          <a href="/" class="mobile-link text-2xl font-display font-medium text-espresso hover:text-terracotta">Home</a>
+          <a href="/menu.html" class="mobile-link text-2xl font-display font-medium text-espresso hover:text-terracotta">Menu</a>
+          <a href="/about.html" class="mobile-link text-2xl font-display font-medium text-espresso hover:text-terracotta">About</a>
+          <a href="/reviews.html" class="mobile-link text-2xl font-display font-medium text-espresso hover:text-terracotta">Reviews</a>
+          <a href="/contact.html" class="mobile-link text-2xl font-display font-medium text-espresso hover:text-terracotta">Contact</a>
+          <a href="/reservation.html" class="mobile-link text-2xl font-display font-medium text-terracotta font-bold">Book a Table</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="pt-32 pb-12 bg-cream/20 text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-display font-bold text-espresso mb-4 fade-in-up">Our Story</h1>
+      <p class="text-lg text-espresso/70 max-w-2xl mx-auto fade-in-up delay-100">Brewing memories, one cup at a time.</p>
+    </header>
+
+    <!-- Content -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2694&auto=format&fit=crop" alt="Cafe Interior" class="rounded-2xl shadow-lg w-full h-auto">
+        </div>
+        <div data-aos="fade-left">
+          <h2 class="text-3xl font-display font-bold text-espresso mb-6">Born from a Late-Night Craving</h2>
+          <p class="text-espresso/80 mb-6 leading-relaxed">
+            Cafe Sipsy Mocha started with a simple idea: good coffee shouldn't have a curfew. Founded in 2022 by a group of friends who were tired of having nowhere to go after midnight, we set out to create a space that feels like a second home.
+          </p>
+          <p class="text-espresso/80 mb-6 leading-relaxed">
+            Located in the heart of Kharadi, we've become a sanctuary for night owls, students, and anyone looking for a warm vibe and a hot meal. We believe that the best conversations happen over a cup of coffee at 2 AM.
+          </p>
+          <div class="flex gap-4 mt-8">
+            <div class="text-center">
+              <span class="block text-3xl font-bold text-terracotta">3+</span>
+              <span class="text-sm text-espresso/60">Years</span>
+            </div>
+            <div class="w-px bg-espresso/10 h-12"></div>
+            <div class="text-center">
+              <span class="block text-3xl font-bold text-terracotta">50k+</span>
+              <span class="text-sm text-espresso/60">Happy Customers</span>
+            </div>
+            <div class="w-px bg-espresso/10 h-12"></div>
+            <div class="text-center">
+              <span class="block text-3xl font-bold text-terracotta">4.9</span>
+              <span class="text-sm text-espresso/60">Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Values -->
+      <div class="mt-24">
+        <h2 class="text-3xl font-display font-bold text-espresso text-center mb-12" data-aos="fade-up">Our Philosophy</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-espresso/5 text-center" data-aos="fade-up" data-aos-delay="0">
+            <div class="w-12 h-12 bg-terracotta/10 rounded-full flex items-center justify-center mx-auto mb-4 text-terracotta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/><path d="M12 2v2"/><path d="M12 22v-2"/><path d="m17 20.66-1-1.73"/><path d="M11 10.27 7 3.34"/><path d="m20.66 17-1.73-1"/><path d="m3.34 7 1.73 1"/><path d="M14 12h8"/><path d="M2 12h2"/><path d="m20.66 7-1.73 1"/><path d="m3.34 17 1.73-1"/><path d="m17 3.34-1 1.73"/><path d="m11 13.73-4 6.93"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-espresso mb-2">Freshness First</h3>
+            <p class="text-espresso/70">We source locally and prep daily. No shortcuts, just fresh ingredients in every bite.</p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-espresso/5 text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-12 h-12 bg-terracotta/10 rounded-full flex items-center justify-center mx-auto mb-4 text-terracotta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h8v-2h2v2h3v-6c1-.5 2.5-2.5 3-5V5z"/><path d="M13 13c1 0 3-1 3-3"/><path d="M13 13c-2 0-3-1-3-3"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-espresso mb-2">Affordable Luxury</h3>
+            <p class="text-espresso/70">Great taste shouldn't cost a fortune. We keep our prices pocket-friendly for everyone.</p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-espresso/5 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-12 h-12 bg-terracotta/10 rounded-full flex items-center justify-center mx-auto mb-4 text-terracotta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-espresso mb-2">Community Vibe</h3>
+            <p class="text-espresso/70">More than a cafe, we are a community hub where friendships are brewed daily.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-espresso/95 text-cream/80 pt-16 pb-8 border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          <div>
+            <a href="/" class="flex items-center gap-2 mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-terracotta"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+              <span class="font-display font-bold text-xl tracking-tight text-cream">Cafe Sipsy Mocha</span>
+            </a>
+            <p class="text-sm leading-relaxed mb-6">Your go-to spot for late-night vibes, great coffee, and delicious bites in Kharadi.</p>
+          </div>
+          <div>
+            <h4 class="font-display font-bold text-cream text-lg mb-6">Quick Links</h4>
+            <ul class="space-y-3">
+              <li><a href="/" class="hover:text-terracotta transition-colors">Home</a></li>
+              <li><a href="/menu.html" class="hover:text-terracotta transition-colors">Menu</a></li>
+              <li><a href="/about.html" class="hover:text-terracotta transition-colors">About Us</a></li>
+              <li><a href="/reservation.html" class="hover:text-terracotta transition-colors">Book a Table</a></li>
+              <li><a href="/contact.html" class="hover:text-terracotta transition-colors">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-display font-bold text-cream text-lg mb-6">Contact Us</h4>
+            <ul class="space-y-4 text-sm">
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-terracotta mt-1 shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Rakshak Nagar, Kharadi, Pune, Maharashtra 411014</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-terracotta shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+918390083077" class="hover:text-terracotta transition-colors">083900 83077</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-display font-bold text-cream text-lg mb-6">Opening Hours</h4>
+            <ul class="space-y-2 text-sm">
+              <li class="flex justify-between">
+                <span>Monday - Sunday</span>
+                <span class="text-cream font-medium">12:00 PM - 3:00 AM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-cream/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-cream/50">
+          <p>&copy; 2024 Cafe Sipsy Mocha. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="/src/script.ts"></script>
+  </body>
+</html>

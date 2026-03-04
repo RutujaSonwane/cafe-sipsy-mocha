@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  
+  --color-espresso: #2C1810;
+  --color-cream: #F5ECD7;
+  --color-terracotta: #C4714F;
+  --color-sage: #A8B5A0;
+  --color-offwhite: #FAF7F2;
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-espresso { color: var(--color-espresso); }
+  .bg-espresso { background-color: var(--color-espresso); }
+  
+  .text-cream { color: var(--color-cream); }
+  .bg-cream { background-color: var(--color-cream); }
+  
+  .text-terracotta { color: var(--color-terracotta); }
+  .bg-terracotta { background-color: var(--color-terracotta); }
+  
+  .text-sage { color: var(--color-sage); }
+  .bg-sage { background-color: var(--color-sage); }
+  
+  .text-offwhite { color: var(--color-offwhite); }
+  .bg-offwhite { background-color: var(--color-offwhite); }
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-offwhite);
+  color: var(--color-espresso);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-offwhite);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-terracotta);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-espresso);
+}
+
+/* Animations */
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+/* Menu Tabs */
+.menu-tab.active {
+  background-color: var(--color-espresso);
+  color: var(--color-cream);
+  border-color: var(--color-espresso);
+}
+
+/* Card Hover Effects */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(44, 24, 16, 0.1);
+}
+
+/* Mobile Menu */
+#mobile-menu {
+  transition: transform 0.3s ease-in-out;
+}
+#mobile-menu.open {
+  transform: translateX(0);
+}
+#mobile-menu.closed {
+  transform: translateX(100%);
+}
