@@ -79,6 +79,11 @@ html {
 .delay-300 { animation-delay: 0.3s; }
 
 /* Menu Tabs */
+.menu-tab {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 .menu-tab.active {
   background-color: var(--color-espresso);
   color: var(--color-cream);

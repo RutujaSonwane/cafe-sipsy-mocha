@@ -56,6 +56,67 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterBtns = document.querySelectorAll('.menu-tab');
   const menuItems = document.querySelectorAll('.menu-item');
 
+  // Stable menu image mapping (no random image URLs)
+  if (menuItems.length > 0) {
+    const fallbackByCategory: Record<string, string> = {
+      sandwiches: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop',
+      fries: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=2525&auto=format&fit=crop',
+      burgers: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2598&auto=format&fit=crop',
+      maggi: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=2574&auto=format&fit=crop',
+      momos: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop',
+      combos: 'https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=2670&auto=format&fit=crop',
+      'lite-bites': 'https://images.unsplash.com/photo-1551288049-be096149324b?q=80&w=2560&auto=format&fit=crop',
+      'hot-beverages': 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop',
+      'hot-chocolates': 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=2521&auto=format&fit=crop',
+      'ice-coffee': 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=2574&auto=format&fit=crop',
+      frappes: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=2574&auto=format&fit=crop',
+      'iced-tea': 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?q=80&w=2574&auto=format&fit=crop',
+      mojito: 'https://images.unsplash.com/photo-1587223962930-cb7f31384c19?q=80&w=2574&auto=format&fit=crop',
+      desserts: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=2574&auto=format&fit=crop',
+      shakes: 'https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop',
+    };
+
+    const imageByItemName: Record<string, string> = {};
+
+    // Build fixed map from existing item cards once
+    menuItems.forEach(item => {
+      const imageEl = item.querySelector('img') as HTMLImageElement | null;
+      const titleEl = item.querySelector('h3');
+      if (!imageEl || !titleEl) return;
+
+      const itemName = (titleEl.textContent || '').trim();
+      const explicitImage = (item.getAttribute('data-image') || '').trim();
+      const currentImage = (imageEl.getAttribute('src') || '').trim();
+
+      if (itemName && explicitImage) {
+        imageByItemName[itemName] = explicitImage;
+      } else if (itemName && currentImage && !imageByItemName[itemName]) {
+        imageByItemName[itemName] = currentImage;
+      }
+    });
+
+    menuItems.forEach(item => {
+      const imageEl = item.querySelector('img') as HTMLImageElement | null;
+      const titleEl = item.querySelector('h3');
+      if (!imageEl || !titleEl) return;
+
+      const itemName = (titleEl.textContent || '').trim();
+      const explicitImage = (item.getAttribute('data-image') || '').trim();
+      const rawCategory = (item.getAttribute('data-category') || '').trim().toLowerCase();
+      const normalizedCategory = rawCategory === 'combos' || rawCategory === 'combo' ? 'combos' : rawCategory;
+      const fallbackImage = fallbackByCategory[normalizedCategory] || fallbackByCategory.shakes;
+      const fixedImage = explicitImage || imageByItemName[itemName] || fallbackImage;
+
+      imageEl.alt = itemName;
+      imageEl.loading = 'lazy';
+      imageEl.onerror = () => {
+        imageEl.onerror = null;
+        imageEl.src = fallbackImage;
+      };
+      imageEl.src = fixedImage;
+    });
+  }
+
   if (filterBtns.length > 0) {
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
