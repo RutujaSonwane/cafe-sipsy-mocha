@@ -137,3 +137,11 @@ html {
     padding-right: 0.75rem;
   }
 }
+
+@media (max-width: 1023px) {
+  nav #menu-btn {
+    order: -1;
+    margin-right: 0;
+    margin-left: -0.25rem;
+  }
+}

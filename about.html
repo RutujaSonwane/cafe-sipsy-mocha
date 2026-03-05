@@ -22,7 +22,9 @@
     <nav class="fixed w-full z-50 bg-offwhite/90 backdrop-blur-md border-b border-espresso/5 transition-all duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
-          <a href="/" class="flex items-center gap-2 group">
+          <button id="menu-btn" class="lg:hidden p-2 -mr-2 text-espresso hover:text-terracotta focus:outline-none" aria-label="Open menu" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>          <a href="/" class="flex items-center gap-2 group">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-espresso group-hover:text-terracotta transition-colors"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
             <span class="font-display font-bold text-base sm:text-xl tracking-tight text-espresso truncate max-w-[10rem] sm:max-w-none">Cafe Sipsy Mocha</span>
           </a>
@@ -34,7 +36,7 @@
             <a href="/contact.html" class="nav-link text-espresso hover:text-terracotta font-medium transition-colors">Contact</a>
             <a href="/reservation.html" class="bg-espresso text-cream px-6 py-2.5 rounded-full font-medium hover:bg-terracotta transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200">Book a Table</a>
           </div>
-</div>
+                  </div>
       </div>
     </nav>
 
@@ -44,8 +46,7 @@
         <div class="flex justify-end mb-8">
           <button id="close-menu-btn" class="p-2 text-espresso hover:text-terracotta">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 18 18"/></svg>
-          </button>
-        </div>
+          </button>        </div>
         <div class="flex flex-col space-y-6 text-center">
           <a href="/" class="mobile-link text-2xl font-display font-medium text-espresso hover:text-terracotta">Home</a>
           <a href="/menu.html" class="mobile-link text-2xl font-display font-medium text-espresso hover:text-terracotta">Menu</a>
@@ -180,6 +181,10 @@
     <script type="module" src="/src/script.ts"></script>
   </body>
 </html>
+
+
+
+
 
 
 
