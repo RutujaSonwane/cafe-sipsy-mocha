@@ -221,7 +221,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // WhatsApp Button
   const whatsappBtn = document.createElement('a');
-  whatsappBtn.href = 'https://wa.me/918390083077';
+  const whatsappQuickMessage = encodeURIComponent('Hi Cafe Sipsy Mocha, I want to know more about your menu and table booking.');
+  whatsappBtn.href = `https://wa.me/918390083077?text=${whatsappQuickMessage}`;
   whatsappBtn.target = '_blank';
   whatsappBtn.rel = 'noopener noreferrer';
   whatsappBtn.className = 'w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg flex items-center justify-center hover:bg-[#128C7E] transition-all duration-300 hover:scale-110 focus:outline-none';
