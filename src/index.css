@@ -85,6 +85,17 @@ html {
   border-color: var(--color-espresso);
 }
 
+/* Reusable Menu Card Styles */
+@layer components {
+  .menu-card {
+    @apply bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5;
+  }
+
+  .menu-media {
+    @apply h-40 rounded-lg overflow-hidden mb-4 bg-gray-100;
+  }
+}
+
 /* Card Hover Effects */
 .hover-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;

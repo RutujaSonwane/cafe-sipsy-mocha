@@ -84,8 +84,15 @@
         <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="burgers">Burgers</button>
         <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="maggi">Maggi</button>
         <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="momos">Momos</button>
+        <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="Combos">Combos</button>
+        <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="lite-bites">Lite Bites</button>
         <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="hot-beverages">Hot Beverages</button>
-        <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="cold-coffee">Cold Coffee</button>
+        <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="hot-chocolates">Hot Chocolates</button>
+        <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="ice-coffee">Ice Coffee</button>
+        <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="frappes">Frappes</button>
+        <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="iced-tea">Iced Tea</button>
+        <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="mojito">Mojito</button>
+        <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="desserts">Desserts</button>
         <button class="menu-tab px-4 py-2 rounded-full border border-espresso/20 text-espresso text-sm font-medium hover:bg-espresso/5 transition-colors" data-category="shakes">Shakes</button>
       </div>
 
@@ -93,146 +100,832 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="menu-grid">
         
         <!-- Sandwiches -->
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="sandwiches">
-          <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
+        <div class="menu-item menu-card" data-category="sandwiches">
+          <div class="menu-media">
              <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop" alt="Sandwich" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
             <h3 class="font-bold text-espresso text-lg">Classic Veg Sandwich</h3>
-            <span class="font-bold text-terracotta">₹50</span>
+            <span class="font-bold text-terracotta">₹89</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Fresh vegetables with mint chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="sandwiches">
+          <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop" alt="Sandwich" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Chocolate Sandwich</h3>
+            <span class="font-bold text-terracotta">₹89</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Fresh vegetables with mint chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="sandwiches">
+          <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop" alt="Sandwich" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Cheese Garlic Sandwich</h3>
+            <span class="font-bold text-terracotta">₹99</span>
           </div>
           <p class="text-sm text-espresso/60 mt-1">Fresh vegetables with mint chutney.</p>
         </div>
         
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="sandwiches">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
+        <div class="menu-item menu-card" data-category="sandwiches">
+           <div class="menu-media">
              <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop" alt="Sandwich" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
             <h3 class="font-bold text-espresso text-lg">Cheese Corn Sandwich</h3>
-            <span class="font-bold text-terracotta">₹90</span>
+            <span class="font-bold text-terracotta">₹99</span>
           </div>
           <p class="text-sm text-espresso/60 mt-1">Sweet corn and melted cheese grilled.</p>
         </div>
 
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="sandwiches">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
+        <div class="menu-item menu-card" data-category="sandwiches">
+          <div class="menu-media">
              <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop" alt="Sandwich" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
-            <h3 class="font-bold text-espresso text-lg">Paneer Tikka Sandwich</h3>
-            <span class="font-bold text-terracotta">₹110</span>
+            <h3 class="font-bold text-espresso text-lg">Classic Aloo Sandwich</h3>
+            <span class="font-bold text-terracotta">₹99</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Fresh vegetables with mint chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="sandwiches">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop" alt="Sandwich" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Paneer Sandwich</h3>
+            <span class="font-bold text-terracotta">₹119</span>
           </div>
           <p class="text-sm text-espresso/60 mt-1">Spicy paneer cubes with veggies.</p>
         </div>
 
+        <div class="menu-item menu-card" data-category="sandwiches">
+          <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop" alt="Sandwich" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Tandoori Paneer Sandwich</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Fresh vegetables with mint chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="sandwiches">
+          <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop" alt="Sandwich" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">BBQ Paneer Sandwich</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Fresh vegetables with mint chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="sandwiches">
+          <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop" alt="Sandwich" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Neapolitan Sandwich</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Fresh vegetables with mint chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="sandwiches">
+          <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop" alt="Sandwich" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Special Veg Sandwich</h3>
+            <span class="font-bold text-terracotta">₹149</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Fresh vegetables with mint chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="sandwiches">
+          <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop" alt="Sandwich" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Diet Special Veg Sandwich</h3>
+            <span class="font-bold text-terracotta">₹79</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Fresh vegetables with mint chutney.</p>
+        </div>
+
         <!-- Fries -->
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="fries">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
+         <div class="menu-item menu-card" data-category="fries">
+           <div class="menu-media">
              <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=2525&auto=format&fit=crop" alt="Fries" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
-            <h3 class="font-bold text-espresso text-lg">Peri-Peri Fries</h3>
-            <span class="font-bold text-terracotta">₹90</span>
+            <h3 class="font-bold text-espresso text-lg">Classic</h3>
+            <span class="font-bold text-terracotta">₹69</span>
           </div>
           <p class="text-sm text-espresso/60 mt-1">Crispy fries tossed in spicy peri-peri.</p>
         </div>
 
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="fries">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
-             <img src="https://images.unsplash.com/photo-1585109649139-3668018951a7?q=80&w=2670&auto=format&fit=crop" alt="Fries" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        <div class="menu-item menu-card" data-category="fries">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=2525&auto=format&fit=crop" alt="Fries" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
-            <h3 class="font-bold text-espresso text-lg">Cheese Loaded Fries</h3>
-            <span class="font-bold text-terracotta">₹120</span>
+            <h3 class="font-bold text-espresso text-lg">Peri-Peri</h3>
+            <span class="font-bold text-terracotta">₹79</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Crispy fries tossed in spicy peri-peri.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="fries">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=2525&auto=format&fit=crop" alt="Fries" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Cheese Loaded</h3>
+            <span class="font-bold text-terracotta">₹99</span>
           </div>
           <p class="text-sm text-espresso/60 mt-1">Topped with liquid cheese and herbs.</p>
         </div>
 
         <!-- Burgers -->
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="burgers">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
+        <div class="menu-item menu-card" data-category="burgers">
+           <div class="menu-media">
              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2598&auto=format&fit=crop" alt="Burger" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
             <h3 class="font-bold text-espresso text-lg">Classic Aloo Tikki</h3>
-            <span class="font-bold text-terracotta">₹60</span>
+            <span class="font-bold text-terracotta">₹59</span>
           </div>
           <p class="text-sm text-espresso/60 mt-1">The classic potato patty burger.</p>
         </div>
 
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="burgers">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
+        <div class="menu-item menu-card" data-category="burgers">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2598&auto=format&fit=crop" alt="Burger" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Corn Tikki</h3>
+            <span class="font-bold text-terracotta">₹69</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">The classic potato patty burger.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="burgers">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2598&auto=format&fit=crop" alt="Burger" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Veg Crispy Fried</h3>
+            <span class="font-bold text-terracotta">₹79</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">The classic potato patty burger.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="burgers">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2598&auto=format&fit=crop" alt="Burger" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Paneer</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">The classic potato patty burger.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="burgers">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2598&auto=format&fit=crop" alt="Burger" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Classic Chicken</h3>
+            <span class="font-bold text-terracotta">₹99</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">The classic potato patty burger.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="burgers">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2598&auto=format&fit=crop" alt="Burger" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">BBQ Chicken</h3>
+            <span class="font-bold text-terracotta">₹109</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">The classic potato patty burger.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="burgers">
+           <div class="menu-media">
              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2598&auto=format&fit=crop" alt="Burger" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
             <h3 class="font-bold text-espresso text-lg">Chicken Zinger</h3>
-            <span class="font-bold text-terracotta">₹130</span>
+            <span class="font-bold text-terracotta">₹149</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Crispy fried chicken patty with mayo.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="burgers">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2598&auto=format&fit=crop" alt="Burger" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Tandoori Chicken</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Crispy fried chicken patty with mayo.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="burgers">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2598&auto=format&fit=crop" alt="Burger" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Peri-peri Chicken</h3>
+            <span class="font-bold text-terracotta">₹119</span>
           </div>
           <p class="text-sm text-espresso/60 mt-1">Crispy fried chicken patty with mayo.</p>
         </div>
 
         <!-- Maggi -->
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="maggi">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
+         <div class="menu-item menu-card" data-category="maggi">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=2574&auto=format&fit=crop" alt="Maggi" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Plain Maggi</h3>
+            <span class="font-bold text-terracotta">₹59</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Comfort food with extra cheese.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="maggi">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=2574&auto=format&fit=crop" alt="Maggi" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Vegetable Maggi</h3>
+            <span class="font-bold text-terracotta">₹89</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Comfort food with extra cheese.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="maggi">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=2574&auto=format&fit=crop" alt="Maggi" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Corn Maggi</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Comfort food with extra cheese.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="maggi">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=2574&auto=format&fit=crop" alt="Maggi" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Peri Peri Maggi</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Comfort food with extra cheese.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="maggi">
+           <div class="menu-media">
              <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=2574&auto=format&fit=crop" alt="Maggi" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
             <h3 class="font-bold text-espresso text-lg">Cheese Maggi</h3>
-            <span class="font-bold text-terracotta">₹70</span>
+            <span class="font-bold text-terracotta">₹129</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Comfort food with extra cheese.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="maggi">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=2574&auto=format&fit=crop" alt="Maggi" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Chicken Maggi</h3>
+            <span class="font-bold text-terracotta">₹139</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Comfort food with extra cheese.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="maggi">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=2574&auto=format&fit=crop" alt="Maggi" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Chicken Cheese Maggi</h3>
+            <span class="font-bold text-terracotta">₹169</span>
           </div>
           <p class="text-sm text-espresso/60 mt-1">Comfort food with extra cheese.</p>
         </div>
 
         <!-- Momos -->
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="momos">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
+         <div class="menu-item menu-card" data-category="momos">
+           <div class="menu-media">
              <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Momos" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
-            <h3 class="font-bold text-espresso text-lg">Chicken Steam Momos</h3>
-            <span class="font-bold text-terracotta">₹90</span>
+            <h3 class="font-bold text-espresso text-lg">Steam Momos</h3>
+            <span class="font-bold text-terracotta">₹89</span>
           </div>
           <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
         </div>
 
+        <div class="menu-item menu-card" data-category="momos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Momos" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Fried Momos</h3>
+            <span class="font-bold text-terracotta">₹69</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="momos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Momos" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Peri Peri Fried Momos</h3>
+            <span class="font-bold text-terracotta">₹79</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="momos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Momos" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Cheese Momos</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="momos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Momos" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Chicken Steam Momos</h3>
+            <span class="font-bold text-terracotta">₹99</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="momos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Momos" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Fried Chicken Momos</h3>
+            <span class="font-bold text-terracotta">₹109</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="momos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Momos" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Peri-Peri Chicken Fried Momos</h3>
+            <span class="font-bold text-terracotta">₹149</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="momos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Momos" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">BBQ Chicken Momos</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="momos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Momos" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Cheese Loaded Chicken Momos</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <!-- Combos -->
+        <div class="menu-item menu-card" data-category="Combos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Combo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Veg Crispy + Cold coffee + classic Fries</h3>
+            <span class="font-bold text-terracotta">₹149</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="Combos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Combo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Any Veg Sandwich + Cold coffee + classic Fries</h3>
+            <span class="font-bold text-terracotta">₹199</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="Combos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Combo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Any Non-Veg Sandwich + Cold coffee + classic Fries</h3>
+            <span class="font-bold text-terracotta">₹219</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="Combos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Combo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Any Veg Maggie + Veg Sandwich + 2 Hot Coffee</h3>
+            <span class="font-bold text-terracotta">₹239</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="Combos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Combo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Any Non-Veg Maggie + Veg Sandwich + 2 Hot Coffee</h3>
+            <span class="font-bold text-terracotta">₹239</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="Combos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Combo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Any Veg Burger + Cold Coffee + Classic Fries</h3>
+            <span class="font-bold text-terracotta">₹279</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="Combos">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2670&auto=format&fit=crop" alt="Combo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Any Non-Veg Burger + Cold Coffee + Classic Fries</h3>
+            <span class="font-bold text-terracotta">₹299</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Juicy chicken filling, served with spicy chutney.</p>
+        </div>
+
+        <!-- Lite Bites -->
+        <div class="menu-item menu-card" data-category="lite-bites">
+          <div class="menu-media">
+            <img src="https://images.unsplash.com/photo-1551288049-be096149324b?q=80&w=2560&auto=format&fit=crop" alt="Lite Bites" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Veg Cheese Shots</h3>
+            <span class="font-bold text-terracotta">₹109</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Delicious veg roll with fresh vegetables.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="lite-bites">
+          <div class="menu-media">
+            <img src="https://images.unsplash.com/photo-1551288049-be096149324b?q=80&w=2560&auto=format&fit=crop" alt="Lite Bites" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Veg Fingers</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Delicious veg roll with fresh vegetables.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="lite-bites">
+          <div class="menu-media">
+            <img src="https://images.unsplash.com/photo-1551288049-be096149324b?q=80&w=2560&auto=format&fit=crop" alt="Lite Bites" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Chicken Nugget</h3>
+            <span class="font-bold text-terracotta">₹139</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Delicious veg roll with fresh vegetables.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="lite-bites">
+          <div class="menu-media">
+            <img src="https://images.unsplash.com/photo-1551288049-be096149324b?q=80&w=2560&auto=format&fit=crop" alt="Lite Bites" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Chicken Popcorn</h3>
+            <span class="font-bold text-terracotta">₹149</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Delicious veg roll with fresh vegetables.</p>
+        </div>
+
         <!-- Hot Beverages -->
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="hot-beverages">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
+         <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Espresso</h3>
+            <span class="font-bold text-terracotta">₹59</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
+        </div> 
+
+        <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Double Espresso</h3>
+            <span class="font-bold text-terracotta">₹69</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Kawha</h3>
+            <span class="font-bold text-terracotta">₹89</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Lemon Tea</h3>
+            <span class="font-bold text-terracotta">₹89</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Honey Ginger Tea</h3>
+            <span class="font-bold text-terracotta">₹89</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Americano</h3>
+            <span class="font-bold text-terracotta">₹79</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Cafe Latte</h3>
+            <span class="font-bold text-terracotta">₹89</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Cafe Mocha</h3>
+            <span class="font-bold text-terracotta">₹99</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
             <h3 class="font-bold text-espresso text-lg">Cappuccino</h3>
-            <span class="font-bold text-terracotta">₹80</span>
+            <span class="font-bold text-terracotta">₹89</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Hazelnut Cappuccino</h3>
+            <span class="font-bold text-terracotta">₹99</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Irish Cappuccino</h3>
+            <span class="font-bold text-terracotta">₹99</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Vanila Cappuccino</h3>
+            <span class="font-bold text-terracotta">₹99</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-beverages">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2574&auto=format&fit=crop" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Caremal Cappuccino</h3>
+            <span class="font-bold text-terracotta">₹99</span>
           </div>
           <p class="text-sm text-espresso/60 mt-1">Espresso with steamed milk foam.</p>
         </div>
         
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="hot-beverages">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
+        <!-- Hot Chocolates -->
+         <div class="menu-item menu-card" data-category="hot-chocolates">
+           <div class="menu-media">
              <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=2521&auto=format&fit=crop" alt="Hot Chocolate" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
-            <h3 class="font-bold text-espresso text-lg">Hot Chocolate</h3>
-            <span class="font-bold text-terracotta">₹100</span>
+            <h3 class="font-bold text-espresso text-lg">Bournvita</h3>
+            <span class="font-bold text-terracotta">₹59</span>
           </div>
           <p class="text-sm text-espresso/60 mt-1">Rich, creamy chocolate goodness.</p>
         </div>
 
-        <!-- Cold Coffee -->
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="cold-coffee">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
-             <img src="https://images.unsplash.com/photo-1517701604599-bb29b5dd7359?q=80&w=2670&auto=format&fit=crop" alt="Cold Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        <div class="menu-item menu-card" data-category="hot-chocolates">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=2521&auto=format&fit=crop" alt="Hot Chocolate" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Traditional Hot Chocolate</h3>
+            <span class="font-bold text-terracotta">₹59</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Rich, creamy chocolate goodness.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-chocolates">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=2521&auto=format&fit=crop" alt="Hot Chocolate" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Hot Chocolate Caramel</h3>
+            <span class="font-bold text-terracotta">₹99</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Rich, creamy chocolate goodness.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-chocolates">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=2521&auto=format&fit=crop" alt="Hot Chocolate" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Hot Cinnamon Chocolate</h3>
+            <span class="font-bold text-terracotta">₹129</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Rich, creamy chocolate goodness.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="hot-chocolates">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=2521&auto=format&fit=crop" alt="Hot Chocolate" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Hot Nutella</h3>
+            <span class="font-bold text-terracotta">₹139</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Rich, creamy chocolate goodness.</p>
+        </div>
+
+        
+        <!-- Ice Coffee -->
+        <div class="menu-item menu-card" data-category="ice-coffee">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=2574&auto=format&fit=crop" alt="Cold Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
             <h3 class="font-bold text-espresso text-lg">Iced Americano</h3>
-            <span class="font-bold text-terracotta">₹90</span>
+            <span class="font-bold text-terracotta">₹79</span>
           </div>
           <p class="text-sm text-espresso/60 mt-1">Espresso over ice and water.</p>
         </div>
 
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="cold-coffee">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
+        <div class="menu-item menu-card" data-category="ice-coffee">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=2574&auto=format&fit=crop" alt="Cold Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Iced Cafe Latte</h3>
+            <span class="font-bold text-terracotta">₹109</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso over ice and water.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="ice-coffee">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=2574&auto=format&fit=crop" alt="Cold Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Iced Cafe Mocha</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso over ice and water.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="ice-coffee">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=2574&auto=format&fit=crop" alt="Cold Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Latte Vanila</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso over ice and water.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="ice-coffee">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=2574&auto=format&fit=crop" alt="Cold Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Iced Latte Irish</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso over ice and water.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="ice-coffee">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=2574&auto=format&fit=crop" alt="Cold Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Nutella Ice Coffee</h3>
+            <span class="font-bold text-terracotta">₹159</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Espresso over ice and water.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="ice-coffee">
+           <div class="menu-media">
              <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=2574&auto=format&fit=crop" alt="Frappe" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
@@ -242,9 +935,299 @@
           <p class="text-sm text-espresso/60 mt-1">Blended coffee with hazelnut flavor.</p>
         </div>
 
+        <!-- Frappee -->
+        <div class="menu-item menu-card" data-category="frappes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Cafe Frappe</h3>
+            <span class="font-bold text-terracotta">₹109</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="frappes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Mocha Frappe</h3>
+            <span class="font-bold text-terracotta">₹129</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="frappes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Hazelnut Frappe</h3>
+            <span class="font-bold text-terracotta">₹129</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="frappes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Caramel Frappe</h3>
+            <span class="font-bold text-terracotta">₹129</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="frappes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Irish Caramel Frappe</h3>
+            <span class="font-bold text-terracotta">₹129</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="frappes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Biscoff Bliss Frappe</h3>
+            <span class="font-bold text-terracotta">₹159</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="frappes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Choco Java Chip Frappe</h3>
+            <span class="font-bold text-terracotta">₹149</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <!-- Iced Tea -->
+         <div class="menu-item menu-card" data-category="iced-tea">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Lemon Ice Tea</h3>
+            <span class="font-bold text-terracotta">₹69</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="iced-tea">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Peach Ice Tea</h3>
+            <span class="font-bold text-terracotta">₹79</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="iced-tea">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Kiwi</h3>
+            <span class="font-bold text-terracotta">₹79</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="iced-tea">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Passion Fruit Ice Tea</h3>
+            <span class="font-bold text-terracotta">₹79</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <!-- Mojito -->
+        <div class="menu-item menu-card" data-category="mojito">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Classic Mojito</h3>
+            <span class="font-bold text-terracotta">₹59</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="mojito">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Peach Mojito</h3>
+            <span class="font-bold text-terracotta">₹69</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="mojito">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Blueberry Mojito</h3>
+            <span class="font-bold text-terracotta">₹69</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="mojito">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Kiwi Mojito</h3>
+            <span class="font-bold text-terracotta">₹69</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="mojito">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Passion Fruit Mojito</h3>
+            <span class="font-bold text-terracotta">₹79</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="mojito">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Rose Lemonade Mojito</h3>
+            <span class="font-bold text-terracotta">₹79</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="mojito">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Blue Lagoon Mojito</h3>
+            <span class="font-bold text-terracotta">₹89</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="mojito">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Green Apple Mojito</h3>
+            <span class="font-bold text-terracotta">₹89</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-item menu-card" data-category="desserts">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Hot Chocolate Brownie</h3>
+            <span class="font-bold text-terracotta">₹139</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="desserts">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Dark Chocolate Brownie</h3>
+            <span class="font-bold text-terracotta">₹169</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="desserts">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Nutella Brownie</h3>
+            <span class="font-bold text-terracotta">₹179</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="desserts">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Red Velvet Brownie</h3>
+            <span class="font-bold text-terracotta">₹199</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
         <!-- Shakes -->
-        <div class="menu-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-4 border border-espresso/5" data-category="shakes">
-           <div class="h-40 rounded-lg overflow-hidden mb-4 bg-gray-100">
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Bournvita</h3>
+            <span class="font-bold text-terracotta">₹99</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Crispy Frappe</h3>
+            <span class="font-bold text-terracotta">₹99</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Chocolate Shake</h3>
+            <span class="font-bold text-terracotta">₹109</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
              <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="flex justify-between items-start">
@@ -254,6 +1237,115 @@
           <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
         </div>
 
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Popcorn Shake</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Frosty Shake</h3>
+            <span class="font-bold text-terracotta">₹119</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Vanilla Shake</h3>
+            <span class="font-bold text-terracotta">₹129</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Belgium Chocolate Shake</h3>
+            <span class="font-bold text-terracotta">₹129</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Sipsy Mocha Choco Lagoon</h3>
+            <span class="font-bold text-terracotta">₹139</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Mix Berry Shake</h3>
+            <span class="font-bold text-terracotta">₹139</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Kitkat Shake</h3>
+            <span class="font-bold text-terracotta">₹139</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Blueberry cheesecake shake</h3>
+            <span class="font-bold text-terracotta">₹159</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Strawberry Cheesecake Shake</h3>
+            <span class="font-bold text-terracotta">₹159</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
+
+        <div class="menu-item menu-card" data-category="shakes">
+           <div class="menu-media">
+             <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?q=80&w=2670&auto=format&fit=crop" alt="Shake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="flex justify-between items-start">
+            <h3 class="font-bold text-espresso text-lg">Naughty Nutella Shake</h3>
+            <span class="font-bold text-terracotta">₹149</span>
+          </div>
+          <p class="text-sm text-espresso/60 mt-1">Thick shake with crushed Oreos.</p>
+        </div>
       </div>
     </section>
 
@@ -316,3 +1408,4 @@
     <script type="module" src="/src/script.ts"></script>
   </body>
 </html>
+
