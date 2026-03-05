@@ -18,21 +18,41 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileLinks = document.querySelectorAll('.mobile-link');
 
   if (menuBtn && closeMenuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', () => {
+    const openMobileMenu = () => {
+      mobileMenu.classList.remove('translate-x-full');
       mobileMenu.classList.remove('closed');
       mobileMenu.classList.add('open');
-    });
+      document.body.style.overflow = 'hidden';
+      menuBtn.setAttribute('aria-expanded', 'true');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+    };
 
-    closeMenuBtn.addEventListener('click', () => {
+    const closeMobileMenu = () => {
       mobileMenu.classList.remove('open');
       mobileMenu.classList.add('closed');
-    });
+      mobileMenu.classList.add('translate-x-full');
+      document.body.style.overflow = '';
+      menuBtn.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+    };
+
+    menuBtn.addEventListener('click', openMobileMenu);
+    closeMenuBtn.addEventListener('click', closeMobileMenu);
 
     mobileLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        mobileMenu.classList.add('closed');
-      });
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    mobileMenu.addEventListener('click', (event) => {
+      if (event.target === mobileMenu) {
+        closeMobileMenu();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && mobileMenu.classList.contains('open')) {
+        closeMobileMenu();
+      }
     });
   }
 
@@ -212,3 +232,4 @@ document.addEventListener('DOMContentLoaded', () => {
   container.appendChild(phoneBtn);
   document.body.appendChild(container);
 });
+

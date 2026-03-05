@@ -116,7 +116,24 @@ html {
 }
 #mobile-menu.open {
   transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
 }
 #mobile-menu.closed {
   transform: translateX(100%);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+  nav .h-20 {
+    height: 4rem;
+  }
+
+  nav .max-w-7xl {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
